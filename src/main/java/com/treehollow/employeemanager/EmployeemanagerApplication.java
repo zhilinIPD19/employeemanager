@@ -15,6 +15,9 @@ public class EmployeemanagerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(EmployeemanagerApplication.class, args);
 	}
+
+	//CORS capability works by adding some specific HTTP headers that tell the browser that downloaded webpage should be allowed to make web requests to given/all domains.
+	//Also, you can add information to instruct browser to allow only certain HTTP methods (GET/PUT/POST/DELETE etc) on those domain URLs.
 	@Bean
 	public CorsFilter corsFilter() {
 		CorsConfiguration corsConfiguration = new CorsConfiguration();
